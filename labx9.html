@@ -1,0 +1,20 @@
+<layer id="test" width=80px height=80px>
+</layer>
+<script language="JavaScript1.2">
+//variable that helps alternate between red and blue
+var thecolor=true
+//Apply a bgColor of blue as the initial layer color
+document.test.bgColor="blue"
+function changecol()
+{
+//if thecolor=true
+if (thecolor)
+document.test.bgColor="blue"
+else
+document.test.bgColor="red"
+//set thecolor to the opposite of its current state
+thecolor=!thecolor
+setTimeout("changecol()",1000)
+}
+changecol()
+</script>

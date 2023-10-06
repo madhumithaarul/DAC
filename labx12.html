@@ -1,0 +1,24 @@
+<LAYER NAME="layer1" LEFT=360 TOP=176
+BGCOLOR="#ffff00" > <BR>
+<H1> This text is in layer 1 </H1> <BR>
+<LAYER NAME="layer1A" LEFT=72 TOP=80
+VISIBILITY=show BGCOLOR="#8888ff">
+This text is in layer 1A
+</LAYER>
+</LAYER>
+<FORM>
+<INPUT TYPE="button" VALUE="LEFT"
+onclick="layers.layer1.left -=10">
+<INPUT TYPE="button" VALUE="RIGHT"
+onclick="layers.layer1.left +=10">
+<INPUT TYPE="button" VALUE="UP"
+onclick="layers.layer1.top -=10">
+<INPUT TYPE="button" VALUE="Down"
+onclick="layers.layer1.top+=10">
+</FORM>
+<FORM NAME="layerform">
+<INPUT TYPE="button" VALUE="offset()"
+onclick="layers.layer1.offset(-100,100)" >
+<INPUT TYPE="button" VALUE="MoveTo()"
+onclick="layers.layer1.moveTo(0,300)">
+</FORM>

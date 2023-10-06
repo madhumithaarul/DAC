@@ -1,0 +1,17 @@
+<LAYER NAME="layer1" WIDTH=400 LEFT=250 TOP=10
+BGCOLOR="orange" Z-INDEX=2>
+<H1> This is layer 1 </H1>
+With a little text
+</LAYER>
+<LAYER NAME="layer2" WIDTH=400 LEFT=350 TOP=50
+BGCOLOR="blue" Z-INDEX=1>
+<H1> This is layer 2 </H1>
+With a little text
+</LAYER>
+<FORM>
+<INPUT TYPE="button" VALUE="LAYER 2 ON TOP"
+onclick="layers.layer2.moveAbove(layers.layer1)">
+<P>
+<INPUT TYPE="button" VALUE="LAYER 1 ON TOP"
+onclick="layers.layer1.moveAbove(layers.layer2)">
+</FORM>
